@@ -1,0 +1,37 @@
+img {
+	box-sizing: border-box;
+	}
+
+button {
+	margin: 20px auto;
+	padding: 10px;
+	border-radius: 20px;
+	outline: none;
+	}
+
+#container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -300px;
+	margin-top: -12%;
+	text-align: center;
+	width: 500px;
+	border-radius: 150px;
+	padding: 50px;
+	}
+
+.green {
+	width: 20%;
+	height: 10%;
+	}
+
+.red {
+	width: 30%;
+	height: 10%;
+	}
+
+.selected {
+	border: 2px solid #E4E4E4;
+	border-radius: 10px;
+	}
