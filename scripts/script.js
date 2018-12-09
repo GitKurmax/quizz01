@@ -7,11 +7,7 @@ for (let i = 0; i < apples.length; i++) {
 
 check.addEventListener('click', function () {
 	let elem = document.querySelector('.selected');
-	if(!elem){
-		let audio = new Audio('./sound/choice.mp3');
-		audio.play();
-		return;
-	}
+	
 	if (elem.classList.contains('red')) {
 		stop(apples,elem,'#00CD2F','./sound/applause.mp3',check);
 	}else{
@@ -20,6 +16,7 @@ check.addEventListener('click', function () {
 })
 
 function select() {
+	check.disabled = false;
 	this.classList.toggle('selected');
 		for (let i = 0; i < apples.length; i++) {
 			if(apples[i] == this){
