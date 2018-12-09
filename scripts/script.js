@@ -16,8 +16,12 @@ check.addEventListener('click', function () {
 })
 
 function select() {
-	check.disabled = false;
 	this.classList.toggle('selected');
+	if(this.classList.contains('selected')){
+		check.disabled = false;
+	}else{
+		check.disabled = true;
+	}
 		for (let i = 0; i < apples.length; i++) {
 			if(apples[i] == this){
 				continue;
