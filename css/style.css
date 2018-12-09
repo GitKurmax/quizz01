@@ -5,7 +5,7 @@ body{
 	-webkit-user-select: none;
 	user-select: none;
 	}
-	
+
 img {
 	box-sizing: border-box;
 	}
@@ -26,6 +26,10 @@ h1 {
 	font-size: 35px;
 }
 
+#task {
+	margin-bottom: 80px;
+}
+
 .unabled {
 	background-color: #FFDD00;
 }
@@ -37,7 +41,7 @@ h1 {
 	left: 50%;
 	top: 50%;
 	margin-left: -450px;
-	margin-top: -12.75%;
+	margin-top: -20%;
 	text-align: center;
 	width: 900px;
 	}
