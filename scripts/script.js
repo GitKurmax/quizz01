@@ -13,21 +13,20 @@ check.addEventListener('click', function () {
 	}else{
 		stop(apples,elem,'#FF0000','./sound/tolpa.mp3',check);
 	}
-})
 
+})
 function select() {
-	this.classList.toggle('selected');
-	if(this.classList.contains('selected')){
-		check.disabled = false;
-	}else{
-		check.disabled = true;
-	}
+	this.classList.add('selected');
+	check.disabled = false;
+	
 		for (let i = 0; i < apples.length; i++) {
 			if(apples[i] == this){
 				continue;
 			}
 			if(this.classList.contains('selected')&&apples[i].classList.contains('selected')){
 				apples[i].classList.toggle('selected');
+			}else{
+
 			}
 		}
 	}
